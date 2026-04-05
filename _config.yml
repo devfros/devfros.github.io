@@ -1,0 +1,188 @@
+# The Site Configuration
+
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
+
+timezone: "UTC"
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: devfros
+
+tagline: Personal blog
+
+description: >-
+  Notes on software, systems, and things I am learning.
+
+# No trailing slash. Use https://username.github.io for User Pages.
+url: https://devfros.github.io
+
+github:
+  username: devfros
+
+twitter:
+  username:
+
+social:
+  name: devfros
+  links:
+    - https://github.com/devfros
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
+
+pageviews:
+  provider:
+
+theme_mode:
+
+# cdn: https://example.com
+
+# Sidebar avatar (local path or URL). Leave unset to use theme default.
+avatar: /assets/img/imgs/avatar.png
+
+social_preview_image:
+
+toc: true
+
+comments:
+  provider: giscus
+  disqus:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo: devfros/devfros.github.io
+    repo_id: R_kgDOR6SW6g
+    category: General
+    category_id: DIC_kwDOR6SW6s4C6HA6
+    mapping: pathname
+    strict:
+    input_position: bottom
+    lang: en
+    reactions_enabled: 1
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: false
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 25
+
+baseurl: ""
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:categories/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - rollup.config.js
+  - node_modules
+  - "*.config.js"
+  - package*.json
+  - docs
+  - purgecss.js
+
+plugins:
+  - jekyll-redirect-from
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

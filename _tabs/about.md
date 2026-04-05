@@ -4,6 +4,7 @@ order: 4
 title: About
 ---
 
-This site is built with [Jekyll](https://jekyllrb.com/) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, published on [GitHub Pages](https://pages.github.com/).
+## Who am i
 
-I write here about software, tooling, and whatever I am working on. You can find me on [GitHub](https://github.com/devfros).
+A guy that loves to code and has a "very important" opinions on things.
+I mostly build something

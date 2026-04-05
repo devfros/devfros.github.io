@@ -4,6 +4,10 @@
   icon: "fab fa-github"
   url: "https://github.com/devfros"
 
+- type: telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/afros_rajabov"
+
 - type: rss
   icon: "fas fa-rss"
   noblank: true
